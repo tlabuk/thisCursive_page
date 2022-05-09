@@ -3882,6 +3882,7 @@ textarea.form-control-lg {
   color: #495057;
   background-color: #fff;
   border-color: #dee2e6 #dee2e6 #fff;
+  padding-left: 100px;
 }
 .nav-tabs .dropdown-menu {
   margin-top: -1px;
@@ -3944,7 +3945,7 @@ textarea.form-control-lg {
   display: flex;
   flex-wrap: inherit;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .navbar-brand {
   padding-top: 0.3125rem;
@@ -3957,7 +3958,7 @@ textarea.form-control-lg {
 .navbar-nav {
   display: flex;
   flex-direction: column;
-  padding-left: 0;
+  padding-left: 5rem;
   margin-bottom: 0;
   list-style: none;
 }
@@ -4136,8 +4137,8 @@ textarea.form-control-lg {
     position: absolute;
   }
   .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
   }
   .navbar-expand-lg .navbar-nav-scroll {
     overflow: visible;
