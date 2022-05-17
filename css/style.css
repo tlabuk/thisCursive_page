@@ -9895,6 +9895,10 @@ textarea.form-control-lg {
   color: black;
 }
 
+.no-decor:hover {
+  color: #f7ba0f;
+}
+
 p .a {
   background: rgba(255, 255, 255, 0);
   border-bottom: 1px solid;
@@ -9946,9 +9950,7 @@ p .a:hover {
   stroke-dasharray: 422, 0;
   transition: all 0.35s linear;
 }
-.no-decor:hover {
-  color: #f7ba0f;
-}
+
 .my-btn-1:hover {
   background: white;
   font-weight: 900;
