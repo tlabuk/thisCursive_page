@@ -568,9 +568,9 @@ progress {
 }
 
 .container-middle {
-  height: 80vh;
   border-style: dashed;
   border-color: #f7b90fa3;
+  width: 70%;
 }
 
 @media (min-width: 576px) {
@@ -4763,6 +4763,7 @@ progress {
     text-align: center !important;
   }
 }
+
 @media (min-width: 768px) {
   .float-md-start {
     float: left !important;
@@ -7483,7 +7484,7 @@ p .a:hover {
 }
 .my-btn-1 rect {
   fill: none;
-  stroke: black;
+  stroke: rgb(80, 80, 80);
   stroke-width: 2;
   stroke-dasharray: 422, 0;
   transition: all 0.35s linear;
@@ -7493,7 +7494,7 @@ p .a:hover {
   background: white;
   font-weight: 900;
   letter-spacing: 1px;
-  color: black;
+  color: rgb(73, 73, 73);
 }
 .my-btn-1:hover rect {
   stroke-width: 5;
@@ -7557,8 +7558,12 @@ p .a:hover {
 .container-divider {
   height: 1rem;
   margin-bottom: 3rem;
-  background-color: rgba(0, 0, 0, .1);
+  background-color: rgba(49, 48, 48, 0.1);
   border: solid rgba(0, 0, 0, 0.102);
   border-width: 1px 0;
   box-shadow: inset 0 .5em 1.5em rgba(50, 50, 50, 0.058), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.m-top {
+  margin-top: 90px;
 }
