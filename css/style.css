@@ -7,37 +7,11 @@
  */
 
  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
 :root {
-  --bs-blue: #0d6efd;
-  --bs-indigo: #6610f2;
-  --bs-purple: #6f42c1;
-  --bs-pink: #d63384;
-  --bs-red: #dc3545;
-  --bs-orange: #fd7e14;
-  --bs-yellow: #ffc107;
-  --bs-green: #198754;
-  --bs-teal: #20c997;
-  --bs-cyan: #0dcaf0;
-  --bs-white: #fff;
-  --bs-gray: #6c757d;
-  --bs-gray-dark: #343a40;
-  --bs-gray-100: #f8f9fa;
-  --bs-gray-200: #e9ecef;
-  --bs-gray-300: #dee2e6;
-  --bs-gray-400: #ced4da;
-  --bs-gray-500: #adb5bd;
-  --bs-gray-600: #6c757d;
-  --bs-gray-700: #495057;
-  --bs-gray-800: #343a40;
-  --bs-gray-900: #212529;
-  --bs-primary: #0d6efd;
-  --bs-secondary: #6c757d;
-  --bs-success: #198754;
-  --bs-info: #0dcaf0;
-  --bs-warning: #ffc107;
-  --bs-danger: #dc3545;
-  --bs-light: #f8f9fa;
-  --bs-dark: #212529;
+  --tc-nav-links-color: rgba(0, 0, 0, 0.513);
   --bs-primary-rgb: 13, 110, 253;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
@@ -50,8 +24,8 @@
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
-  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --bs-font-sans-serif: 'Prompt', sans-serif;
+  --bs-font-monospace: 'JetBrains Mono', monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
   --bs-body-font-size: 1rem;
@@ -156,19 +130,6 @@ p {
   margin-bottom: 1rem;
 }
 
-abbr[title],
-abbr[data-bs-original-title] {
-  text-decoration: underline dotted;
-  cursor: help;
-  text-decoration-skip-ink: none;
-}
-
-address {
-  margin-bottom: 1rem;
-  font-style: normal;
-  line-height: inherit;
-}
-
 ol,
 ul {
   padding-left: 2rem;
@@ -186,19 +147,6 @@ ul ul,
 ol ul,
 ul ol {
   margin-bottom: 0;
-}
-
-dt {
-  font-weight: 700;
-}
-
-dd {
-  margin-bottom: 0.5rem;
-  margin-left: 0;
-}
-
-blockquote {
-  margin: 0 0 1rem;
 }
 
 b,
@@ -223,14 +171,6 @@ sup {
   vertical-align: baseline;
 }
 
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
-}
-
 a {
   color: #0d6efd;
   text-decoration: underline;
@@ -242,51 +182,6 @@ a:hover {
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
   color: inherit;
   text-decoration: none;
-}
-
-pre,
-code,
-kbd,
-samp {
-  font-family: var(--bs-font-monospace);
-  font-size: 1em;
-  direction: ltr /* rtl:ignore */;
-  unicode-bidi: bidi-override;
-}
-
-pre {
-  display: block;
-  margin-top: 0;
-  margin-bottom: 1rem;
-  overflow: auto;
-  font-size: 0.875em;
-}
-pre code {
-  font-size: inherit;
-  color: inherit;
-  word-break: normal;
-}
-
-code {
-  font-size: 0.875em;
-  color: #d63384;
-  word-wrap: break-word;
-}
-a > code {
-  color: inherit;
-}
-
-kbd {
-  padding: 0.2rem 0.4rem;
-  font-size: 0.875em;
-  color: #fff;
-  background-color: #212529;
-  border-radius: 0.2rem;
-}
-kbd kbd {
-  padding: 0;
-  font-size: 1em;
-  font-weight: 700;
 }
 
 figure {
@@ -398,22 +293,6 @@ fieldset {
   border: 0;
 }
 
-legend {
-  float: left;
-  width: 100%;
-  padding: 0;
-  margin-bottom: 0.5rem;
-  font-size: calc(1.275rem + 0.3vw);
-  line-height: inherit;
-}
-@media (min-width: 1200px) {
-  legend {
-    font-size: 1.5rem;
-  }
-}
-legend + * {
-  clear: left;
-}
 
 progress {
   vertical-align: baseline;
@@ -1937,9 +1816,12 @@ progress {
 }
 
 .nav-link {
+  font-family: 'Prompt', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
   display: block;
   padding: 0.5rem 1rem;
-  color: #0d6efd;
+  color: #5b6575;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -2034,8 +1916,11 @@ progress {
   justify-content: space-between;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  border-bottom: 4px solid #3d3b3828;
+  -webkit-box-shadow: 0px 6px 12px -4px rgba(61, 59, 56, 0.41);
+-moz-box-shadow: 0px 6px 12px -4px rgba(61, 59, 56, 0.41);
+box-shadow: 0px 6px 12px -4px rgba(61, 59, 56, 0.41);
 }
+
 .navbar > .container,
 .navbar > .container-fluid,
 .navbar > .container-sm,
@@ -2238,9 +2123,9 @@ progress {
     position: absolute;
   }
   .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 5rem;
-    padding-left: 5rem;
-    padding-bottom: 1rem;
+    padding-right: 6rem;
+    padding-left: 6rem;
+    padding-bottom: 0.2rem;
     padding-top: 1rem;
   }
   .navbar-expand-lg .navbar-nav-scroll {
@@ -2440,23 +2325,21 @@ progress {
 }
 
 .navbar-light .navbar-brand {
-  color: rgba(0, 0, 0, 0.9);
+  color: var(--tc-nav-links-color);
 }
 .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
-  color: rgba(0, 0, 0, 0.9);
+  color: black;
 }
 .navbar-light .navbar-nav .nav-link {
-  color: rgba(0, 0, 0, 0.737);
+  color: var(--tc-nav-links-color);
 }
 .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
-  color: rgba(0, 0, 0, 0.959);
+  color: black;
 }
-.navbar-light .navbar-nav .nav-link.disabled {
-  color: rgba(0, 0, 0, 0.3);
-}
+
 .navbar-light .navbar-nav .show > .nav-link,
 .navbar-light .navbar-nav .nav-link.active {
-  color: rgba(0, 0, 0, 0.9);
+  color: var(--tc-nav-links-color);
 }
 .navbar-light .navbar-toggler {
   color: rgba(0, 0, 0, 0.55);
@@ -2472,41 +2355,6 @@ progress {
 .navbar-light .navbar-text a:hover,
 .navbar-light .navbar-text a:focus {
   color: rgba(0, 0, 0, 0.9);
-}
-
-.navbar-dark .navbar-brand {
-  color: #fff;
-}
-.navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
-  color: #fff;
-}
-.navbar-dark .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 0.55);
-}
-.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
-  color: rgba(255, 255, 255, 0.75);
-}
-.navbar-dark .navbar-nav .nav-link.disabled {
-  color: rgba(255, 255, 255, 0.25);
-}
-.navbar-dark .navbar-nav .show > .nav-link,
-.navbar-dark .navbar-nav .nav-link.active {
-  color: #fff;
-}
-.navbar-dark .navbar-toggler {
-  color: rgba(255, 255, 255, 0.55);
-  border-color: rgba(255, 255, 255, 0.1);
-}
-.navbar-dark .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-.navbar-dark .navbar-text {
-  color: rgba(255, 255, 255, 0.55);
-}
-.navbar-dark .navbar-text a,
-.navbar-dark .navbar-text a:hover,
-.navbar-dark .navbar-text a:focus {
-  color: #fff;
 }
 
 @keyframes progress-bar-stripes {
@@ -7452,7 +7300,7 @@ p .a:hover {
 }
 
 .my-buttons {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Prompt', sans-serif;
   color: black;
   cursor: pointer;
   font-size: 16px;
@@ -7558,10 +7406,12 @@ p .a:hover {
 .container-divider {
   height: 1rem;
   margin-bottom: 3rem;
-  background-color: rgba(49, 48, 48, 0.1);
-  border: solid rgba(0, 0, 0, 0.102);
+  background-color: rgba(49, 48, 48, 0.024);
   border-width: 1px 0;
-  box-shadow: inset 0 .5em 1.5em rgba(50, 50, 50, 0.058), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  -webkit-box-shadow: 0px 2px 9px -1px rgba(36, 35, 35, 0.83);
+  -moz-box-shadow: 0px 2px 9px -1px rgba(36, 35, 35, 0.83);
+  box-shadow: 0px 2px 9px -1px rgba(36, 35, 35, 0.83);
+  border-radius: 10px;
 }
 
 .m-top {
