@@ -1,0 +1,14 @@
+{
+    "name": "thisCursive",
+    "short_name": "thisCursive",
+    "icons": [
+        {
+            "src": "/assets/img/favicon-2.svg",
+            "sizes": "any",
+            "type": "image/png"
+        }    
+    ],
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "standalone"
+}
