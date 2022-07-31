@@ -447,6 +447,7 @@ progress {
 }
 
 .container-middle {
+  border: 3px;
   border-style: dashed;
   border-color: #f7b90fa3;
   width: 70%;
@@ -7424,4 +7425,9 @@ p .a:hover {
 
 .bottom-section {
   height: 90vh;
+}
+
+
+.underline--dotted {
+  border-bottom: 2px rgb(80, 80, 80) dashed;
 }
