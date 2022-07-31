@@ -7435,3 +7435,7 @@ p .a:hover {
 .tile-description {
   color:rgb(80, 79, 79);
 }
+
+.fs-14 {
+  font-size 14px;
+}
