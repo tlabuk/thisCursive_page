@@ -7431,3 +7431,7 @@ p .a:hover {
 .underline--dotted {
   border-bottom: 2px rgb(80, 80, 80) dashed;
 }
+
+.tile-description {
+  color:rgb(80, 79, 79);
+}
