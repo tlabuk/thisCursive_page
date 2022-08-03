@@ -453,11 +453,18 @@ progress {
   width: 70%;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 476px) {
   .container-sm, .container {
     max-width: 540px;
   }
+  .container-middle {
+    border: 2px;
+    border-style: dashed;
+    border-color: #f7b90fa3;
+    width: 95%;
+  }
 }
+
 @media (min-width: 768px) {
   .container-md, .container-sm, .container {
     max-width: 720px;
@@ -2112,6 +2119,7 @@ box-shadow: 0px 6px 12px -4px rgba(61, 59, 56, 0.41);
     overflow-y: visible;
   }
 }
+
 @media (min-width: 992px) {
   .navbar-expand-lg {
     flex-wrap: nowrap;
@@ -7383,6 +7391,12 @@ p .a:hover {
   100% { transform: scale(1,1)      translateY(0); }
 }
 
+@media (max-width: 640px) {
+  .pointer {
+    display: none;
+  }
+}
+
 /* Navbar underline */
 
 .hover-underline {
@@ -7434,4 +7448,9 @@ p .a:hover {
 
 .tile-description {
   color:rgb(80, 79, 79);
+}
+
+.construction {
+  color: red;
+  align-content: center;
 }
