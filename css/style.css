@@ -34,6 +34,8 @@
   --bs-body-color: #212529;
   --bs-body-bg: #f0eeee;
   --custom-font-color: #3D3B38;
+  --color-yellow: #f7ba0f;
+  --color-yellow-dim: #f7b90fbe;
 }
 
 *,
@@ -7437,10 +7439,6 @@ p .a:hover {
   margin-top: 90px;
 }
 
-.bottom-section {
-  height: 90vh;
-}
-
 
 .underline--dotted {
   border-bottom: 2px rgb(80, 80, 80) dashed;
@@ -7453,4 +7451,173 @@ p .a:hover {
 .construction {
   color: red;
   align-content: center;
+}
+
+
+.mycard {
+  width: 350px;
+  height: 350px;
+  border: 1px solid rgb(208, 205, 205);
+  box-shadow: 0px 2px 9px -1px rgba(36, 35, 35, 0.83);
+  display: inline-block;
+  margin-top: 60px;
+  margin-right: 40px;
+  margin-left: 20px;
+  margin-bottom: 50px;
+  border-radius: 4px;
+}
+
+.mycard:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition-duration: 0.5s;
+}
+
+.card-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-heading {
+  width: 100%;
+  height: 60px;
+  background-color: rgb(220, 215, 215);
+  border-bottom: 1px solid rgb(208, 205, 205);
+  padding: 15px;
+  font-size: 18px;
+}
+
+@media (max-width: 1100px) {
+  .mycard {
+    width: 90%;
+    margin-left: 50px;
+  }
+  .card-img {
+    width: 40%;
+    display: flex;
+    margin: 0 auto;
+  }
+}
+
+/* Hoverable 3d box */
+
+.hoverable-box {
+  background-color: transparent;
+  border-radius: 10px;
+  color: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  top: 150px;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 300px;
+  transform-style: preserve-3d;
+  perspective: 2000px;
+  transition: 0.4s;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.second-box {
+  left: 50%;
+  top: -200px;
+  margin-left: 250px;
+}
+.hoverable-box:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border-top: 12px solid #fff;
+  border-left: 15px solid #fff;
+  box-sizing: border-box;
+}
+.hoverable-box:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-bottom: 10px solid #fff;
+  border-right: 10px solid #fff;
+  box-sizing: border-box;
+}
+/* .box .fas {
+  font-size: 25px;
+  height: 50px;
+  width: 50px;
+  line-height: 50px !important;
+  background-color: #fff;
+  color: #fff;
+} */
+/* .box .fa2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+} */
+.hoverable-box .text {
+  position: absolute;
+  top: 30px;
+  left: -30px;
+  width: calc(100% + 60px);
+  height: calc(100% - 60px);
+  background-color: var(--color-yellow-dim);
+  border-radius: 3px;
+  transition: 0.5s;
+}
+.hoverable-box .text .fa1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.hoverable-box .text div {
+  position: relative;
+  left: 0;
+  transform: translateY(-50%);
+  text-align: center;
+  width: 100%;
+  padding: 30px 60px;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+.hoverable-box .text div h3 {
+  position: relative;
+  margin-top: 50px;
+  font-size: 30px;
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+.hoverable-box .text div p {
+  font-size: 15px;
+}
+.hoverable-box:hover {
+  transform: translate(-50%, -50%) rotateY(-20deg) skewY(3deg);
+}
+.hoverable-box:hover .text {
+  transform: rotateY(20deg) skewY(-3deg);
+}
+
+@media (max-width: 1200px) {
+  .second-box {
+    top: 200px;
+    left: -10%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .hoverable-box {
+    left: 50%
+  }
+  
+  .second-box {
+    top: 200px;
+    left: 23%;
+  }
 }
