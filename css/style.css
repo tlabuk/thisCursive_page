@@ -7649,6 +7649,11 @@ p .a:hover {
   overflow-wrap: normal;
 }
 
+
+@media (max-height: 600px) {
+  .top-container {
+    min-height: 650px;
+
 @media (max-height: 700px) {
   .top-container {
     min-height: 700px;
